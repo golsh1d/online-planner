@@ -3,11 +3,11 @@
     height: min-content;
     padding: 8px 16px;
     background-color: #fff;
-    font-family: Dana-medium;
+    font-family: morabba-medium;
     display: flex;
     align-items:center;
     justify-content: space-between;
-    /* border-bottom: 1px solid #000; */
+    border-bottom: 1px solid #000;
 }
 
 .NavBar-right{
@@ -16,11 +16,8 @@
 }
 
 .NavBar-img-container{
-    width: 120px;
-    height: 120px;
     border-radius: 100%;
     overflow: hidden;
-    margin-left: 16px;
 }
 
 .NavBar-img-container img{
@@ -34,14 +31,10 @@
     align-items: center;
 }
 
-.NavBar-list-item {
-    margin-left: 16px;
-}
-
 .NavBar-links{
-    font-size: 24px;
-    font-weight: bold;
     color: #000;
+    letter-spacing: -0.025em;
+    word-spacing: -0.1em;
     transition: all 0.2s ease;
 }
 
@@ -55,7 +48,7 @@
 }
 
 .NavBar-login-icon{
-    margin-right: 8px;
+    margin-right: 2px;
 }
 
 .NavBar-logout-container{
@@ -70,24 +63,23 @@
 .NavBar-logout{
     display: flex;
     align-items: center;
-    width: 110px;
     height: min-content;
     padding: 8px;
-    box-shadow: 0px 0px 5px 0px #efefef;
+    box-shadow: 0px 0px 5px 0px #dedede;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
     color: #820000;
     position: absolute;
-    top: 40px;
-    left: 0px;
     display: none;
     transition: all 0.2s ease;
 }
 
+.NavBar-logout:hover{
+    color: #570000;
+}
+
 .NavBar-logout-icon{
-    margin-left: 3px;
+    margin-left: 2px;
 }
 
 .NavBar-logout-container:hover > .NavBar-logout{
@@ -96,4 +88,105 @@
 
 .NavBar-logout-container:hover > .NavBar-user-icon{
     color: #706D54;
+}
+
+@media screen and (max-width: 768px){
+    .NavBar-container-max-768{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .NavBar-img-container-min-768{
+        width: 95px;
+        height: 95px;
+        margin-left: 8px;
+    }
+    .NavBar-links-min-768{
+        font-size: 16px;
+    }
+    .NavBar-login-icon-min-768{
+        font-size: 21px !important;
+    }
+    .NavBar-list-item-min-768{
+        margin-left: 8px;
+    }
+    .NavBar-user-icon-min-768{
+        font-size: 30px !important;
+    }
+    .NavBar-logout-icon-min-768{
+        font-size: 14px !important;
+    }
+    .NavBar-logout-min-768{
+        font-size: 14px;
+        width: 90px;
+        top: 35px;
+        left: 0px;
+    }
+    .NavBar-container-min-768{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .NavBar-img-container-min-1024{
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+    }
+    .NavBar-links-min-1024{
+        font-size: 18px;
+    }
+    .NavBar-login-icon-min-1024{
+        font-size: 24px !important;
+    }
+    .NavBar-list-item-min-1024{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .NavBar-img-container-min-1280{
+        width: 110px;
+        height: 110px;
+        margin-left: 12px;
+    }
+    .NavBar-links-min-1280{
+        font-size: 20px;
+    }
+    .NavBar-login-icon-min-1280{
+        font-size: 27px !important;
+    }
+    .NavBar-list-item-min-1280 {
+        margin-left: 12px;
+    }
+    .NavBar-user-icon-min-1280{
+        font-size: 40px !important;
+    }
+    .NavBar-logout-icon-min-1280{
+        font-size: 18px !important;
+    }
+    .NavBar-logout-min-1280{
+        font-size: 18px;
+        width: 110px;
+        top: 40px;
+        left: 0px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .NavBar-img-container-min-1920{
+        width: 120px;
+        height: 120px;
+        margin-left: 16px;
+    }
+    .NavBar-links-min-1920{
+        font-size: 24px;
+    }
+    .NavBar-login-icon-min-1920{
+        font-size: 30px !important;
+    }
+    .NavBar-list-item-min-1920{
+        margin-left: 16px;
+    }
 }
