@@ -36,3 +36,43 @@
   text-decoration: none;
   text-align: right;
 }
+
+@media screen and (max-width : 768px){
+  .container{
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 8px;
+  }
+}
+
+@media screen and (min-width : 768px){
+  .container{
+    max-width: 720px;
+    margin: 0px auto;
+    padding: 0px 16px;
+  }
+}
+
+@media screen and (min-width : 1024px){
+  .container{
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 0px 16px;
+  }
+}
+
+@media screen and (min-width : 1280px){
+  .container{
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 0px 16px;
+  }
+}
+
+@media screen and (min-width : 1920px){
+  .container{
+    max-width: 1320px;
+    margin: 0px auto;
+    padding: 0px 16px;
+  }
+}

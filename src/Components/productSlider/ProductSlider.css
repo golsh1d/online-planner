@@ -1,0 +1,95 @@
+.ProductSlider-container{
+    font-family: morabba-medium;
+}
+
+.ProductSlider-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: -0.025em;
+    word-spacing: -0.1em;
+}
+
+.ProductSlider-title-link{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #706d54;
+    color: #fff;
+}
+
+#ProductSlider-chevron-icon{
+    margin-right: 5px;
+    transition: all 0.2s ease;
+}
+
+.ProductSlider-title-link:hover #ProductSlider-chevron-icon{
+    transform: translateX(-4px);
+}
+
+@media screen and (max-width: 768px){
+    .ProductSlider-title-max-768{
+        font-size: 24px;
+    }
+    .ProductSlider-title-link-max-768{
+        font-size: 16px;
+    }
+    .ProductSlider-chevron-icon-max-768{
+        font-size: 16px !important;
+    }
+    .ProductSlider-container-max-768{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ProductSlider-title-min-768{
+        font-size: 26px;
+    }
+    .ProductSlider-title-link-min-768{
+        font-size: 18px;
+    }
+    .ProductSlider-chevron-icon-min-768{
+        font-size: 18px !important;
+    }
+    .ProductSlider-container-min-768{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .ProductSlider-title-min-1024{
+        font-size: 28px;
+    }
+    .ProductSlider-title-link-min-1024{
+        font-size: 20px;
+    }
+    .ProductSlider-chevron-icon-min-1024{
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .ProductSlider-title-min-1280{
+        font-size: 30px;
+    }
+    .ProductSlider-title-link-min-1280{
+        font-size: 22px;
+    }
+    .ProductSlider-chevron-icon-min-1280{
+        font-size: 22px !important;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .ProductSlider-title-min-1920{
+        font-size: 32px;
+    }
+    .ProductSlider-title-link-min-1920{
+        font-size: 24px;
+    }
+    .ProductSlider-chevron-icon-min-1920{
+        font-size: 24px !important;
+    }
+}

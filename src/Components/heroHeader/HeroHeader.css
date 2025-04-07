@@ -20,7 +20,7 @@
 }
 
 .bounce {
-    animation: bounceIn 2s infinite 2s;
+    animation: bounceIn 2s infinite;
 }
 
 @keyframes bounceIn {
