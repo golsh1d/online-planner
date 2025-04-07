@@ -17,7 +17,7 @@ export default function NavBar() {
   const [isLogin, setIsLogin] = useState();
 
   useEffect(() => {
-    setIsLogin(true);
+    setIsLogin(false);
   }, []);
 
   let sideNav = useRef();
