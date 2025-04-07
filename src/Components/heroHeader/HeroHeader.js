@@ -1,5 +1,7 @@
 import React from "react";
 import "./HeroHeader.css";
+// icons
+import ExpandCircleDownRoundedIcon from '@mui/icons-material/ExpandCircleDownRounded';
 
 export default function HeroHeader() {
   return (
@@ -9,6 +11,9 @@ export default function HeroHeader() {
         src="./Img/heroHeader.jpg"
         alt="heroHeader"
       />
+      <div className="HeroHeader-chevron-down-container">
+        <ExpandCircleDownRoundedIcon className="HeroHeader-chevron-down-icon bounce"/>
+      </div>
     </section>
   );
 }
