@@ -1,5 +1,8 @@
 .ProductSlider-container{
     font-family: morabba-medium;
+    background-color: #e6cbb1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #eaeaea;
 }
 
 .ProductSlider-title{
@@ -14,7 +17,7 @@
     display: flex;
     align-items: center;
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #706d54;
     color: #fff;
 }
@@ -40,6 +43,7 @@
     }
     .ProductSlider-container-max-768{
         margin-top: 20px;
+        padding: 10px;
     }
 }
 
@@ -55,6 +59,7 @@
     }
     .ProductSlider-container-min-768{
         margin-top: 40px;
+        padding: 20px;
     }
 }
 

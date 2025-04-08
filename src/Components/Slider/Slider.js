@@ -54,6 +54,7 @@ export default function Slider() {
             "--swiper-pagination-color": "#706d54",
             "--swiper-pagination-bullet-size": "18px",
             "--swiper-pagination-bullet-vertical-gap": "8px",
+            "--swiper-pagination-bottom": "0px",
           }}
         >
           <SwiperSlide>
