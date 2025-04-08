@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProductSlider.css";
 import { Link } from "react-router-dom";
+import Slider from "../Slider/Slider";
 // icon
 import ChevronLeftRoundedIcon from "@mui/icons-material/ChevronLeftRounded";
 
@@ -19,6 +20,7 @@ export default function ProductSlider() {
           </Link>
         </div>
       </section>
+      <Slider />
     </div>
   );
 }

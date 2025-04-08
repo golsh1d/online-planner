@@ -5,7 +5,7 @@ import ExpandCircleDownRoundedIcon from '@mui/icons-material/ExpandCircleDownRou
 
 export default function HeroHeader() {
   return (
-    <section className="HeroHeader-container">
+    <section className="HeroHeader-container HeroHeader-container-max-768 HeroHeader-container-min-768">
       <img
         className="HeroHeader-img-min-1920 HeroHeader-img-min-1280 HeroHeader-img-min-1024 HeroHeader-img-min-768 HeroHeader-img-max-768"
         src="./Img/heroHeader.jpg"
