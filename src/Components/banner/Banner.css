@@ -1,0 +1,27 @@
+.Banner-container {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width : 768px) {
+    .Banner-container-max-width-768 {
+        margin-top: 20px;
+    }
+    .Banner-container img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width : 768px) {
+    .Banner-container-min-width-768 {
+        margin-top: 40px;
+    }
+    .Banner-container img {
+        width: 300px;
+        height: 300px;
+    }
+}
