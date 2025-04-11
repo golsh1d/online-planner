@@ -1,7 +1,65 @@
 import React from "react";
 import "./About.css";
+import { useRef, useState, useEffect } from "react";
 
 export default function About() {
+  const [firstAboutSectionIsVisible, firstAboutSectionSetIsVisible] =
+    useState(false);
+  const [secondAboutSectionIsVisible, secondAboutSectionSetIsVisible] =
+    useState(false);
+  const [thirdAboutSectionIsVisible, thirdAboutSectionSetIsVisible] =
+    useState(false);
+  const [forthAboutSectionIsVisible, forthAboutSectionSetIsVisible] =
+    useState(false);
+
+  let firstAboutSection = useRef();
+  let secondAboutSection = useRef();
+  let thirdAboutSection = useRef();
+  let forthAboutSection = useRef();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const firstAboutSectionTop =
+        firstAboutSection.current.getBoundingClientRect().top;
+      const secondAboutSectionTop =
+        secondAboutSection.current.getBoundingClientRect().top;
+      const thirdAboutSectionTop =
+        thirdAboutSection.current.getBoundingClientRect().top;
+      const forthAboutSectionTop =
+        forthAboutSection.current.getBoundingClientRect().top;
+      const height = window.innerHeight;
+
+      if (firstAboutSectionTop < height && firstAboutSectionTop > 0) {
+        firstAboutSectionSetIsVisible(true);
+      } else {
+        firstAboutSectionSetIsVisible(false);
+      }
+
+      if (secondAboutSectionTop < height && secondAboutSectionTop > 0) {
+        secondAboutSectionSetIsVisible(true);
+      } else {
+        secondAboutSectionSetIsVisible(false);
+      }
+
+      if (thirdAboutSectionTop < height && thirdAboutSectionTop > 0) {
+        thirdAboutSectionSetIsVisible(true);
+      } else {
+        thirdAboutSectionSetIsVisible(false);
+      }
+
+      if (forthAboutSectionTop < height && forthAboutSectionTop > 0) {
+        forthAboutSectionSetIsVisible(true);
+      } else {
+        forthAboutSectionSetIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section className="container">
       <div
@@ -11,7 +69,10 @@ export default function About() {
         <div className="About-title About-title-max-768 About-title-min-768 About-title-min-1024 About-title-min-1280 About-title-min-1920">
           داستان ما
         </div>
-        <div className="About-section About-section-odd About-section-max-768 About-section-min-768">
+        <div
+          ref={firstAboutSection}
+          className="About-section About-section-first About-section-max-768 About-section-min-768"
+        >
           <div className="About-section-text About-section-text-max-768 About-section-text-min-768">
             <div className="About-section-text-title About-section-text-title-max-768 About-section-text-title-min-768">
               چطور به ایده ی برنامه ریز آنلاین رسیدیم؟
@@ -26,12 +87,23 @@ export default function About() {
               زمان، یه برنامه کاملاً استاندارد و شخصی‌سازی‌شده بگیره!
             </div>
           </div>
-          <div className="About-section-img About-section-img-max-768 About-section-img-min-768">
+          <div
+            className={`About-section-img About-section-img-max-768 About-section-img-min-768 ${
+              firstAboutSectionIsVisible && "slide-right"
+            }`}
+          >
             <img src="./Img/finalOpenBook.png" alt="" />
           </div>
         </div>
-        <div className="About-section About-section-even About-section-max-768 About-section-min-768">
-          <div className="About-section-img About-section-img-max-768 About-section-img-min-768">
+        <div
+          ref={secondAboutSection}
+          className="About-section About-section-second About-section-max-768 About-section-min-768"
+        >
+          <div
+            className={`About-section-img About-section-img-max-768 About-section-img-min-768 ${
+              secondAboutSectionIsVisible && "slide-left"
+            }`}
+          >
             <img src="./Img/finalHandWriting2.png" alt="" />
           </div>
           <div className="About-section-text About-section-text-max-768 About-section-text-min-768">
@@ -49,9 +121,12 @@ export default function About() {
           </div>
         </div>
         <div className="About-img-between-section-container About-img-between-section-container-max-768 About-img-between-section-container-min-768">
-            <img src="./Img/lamp.png" alt="lamp" />
+          <img src="./Img/lamp.png" alt="lamp" />
         </div>
-        <div className="About-section About-section-odd About-section-max-768 About-section-min-768">
+        <div
+          ref={thirdAboutSection}
+          className="About-section About-section-third About-section-max-768 About-section-min-768"
+        >
           <div className="About-section-text About-section-text-max-768 About-section-text-min-768">
             <div className="About-section-text-title About-section-text-title-max-768 About-section-text-title-min-768">
               چند کلیک ساده تا یه برنامه حرفه‌ای!
@@ -64,12 +139,23 @@ export default function About() {
               برنامه‌ریز آنلاین همه اینا رو برات حساب می‌کنه.
             </div>
           </div>
-          <div className="About-section-img About-section-img-max-768 About-section-img-min-768">
+          <div
+            className={`About-section-img About-section-img-max-768 About-section-img-min-768 ${
+              thirdAboutSectionIsVisible && "slide-right"
+            }`}
+          >
             <img src="./Img/finalOnlineStuding.png" alt="" />
           </div>
         </div>
-        <div className="About-section About-section-even About-section-max-768 About-section-min-768">
-          <div className="About-section-img About-section-img-max-768 About-section-img-min-768">
+        <div
+          ref={forthAboutSection}
+          className="About-section About-section-forth About-section-max-768 About-section-min-768"
+        >
+          <div
+            className={`About-section-img About-section-img-max-768 About-section-img-min-768 ${
+              forthAboutSectionIsVisible && "slide-left"
+            }`}
+          >
             <img src="./Img/finalteacher2.png" alt="" />
           </div>
           <div className="About-section-text About-section-text-max-768 About-section-text-min-768">
