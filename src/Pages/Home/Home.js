@@ -4,6 +4,7 @@ import HeroHeader from "../../Components/heroHeader/HeroHeader";
 import ProductSlider from "../../Components/productSlider/ProductSlider";
 import Banner from "../../Components/banner/Banner";
 import About from "../../Components/about/About";
+import Button from "../../Components/button/Button";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ProductSlider />
       <Banner />
       <About />
+      <Button />
     </>
   );
 }

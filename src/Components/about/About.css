@@ -78,7 +78,7 @@
       -webkit-transform: translateX(0px);
               transform: translateX(0px);
     }
-  }
+}
   
 
 @media screen and (max-width: 768px){
@@ -94,7 +94,7 @@
         height: min-content !important;
     }
     .About-section-text-title-max-768{
-        font-family: 18px;
+        font-size: 16px;
     }
     .About-section-text-des-max-768{
         margin-top: 8px;
@@ -131,7 +131,7 @@
         align-items: center;
     }
     .About-section-text-title-min-768{
-        font-family: 20px;
+        font-size: 18px;
     }
     .About-section-text-des-min-768{
         margin-top: 16px;

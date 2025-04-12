@@ -3,13 +3,13 @@ import "./About.css";
 import { useRef, useState, useEffect } from "react";
 
 export default function About() {
-  const [firstAboutSectionIsVisible, firstAboutSectionSetIsVisible] =
+  const [firstAboutSectionIsVisible, setFirstAboutSectionIsVisible] =
     useState(false);
-  const [secondAboutSectionIsVisible, secondAboutSectionSetIsVisible] =
+  const [secondAboutSectionIsVisible, setSecondAboutSectionIsVisible] =
     useState(false);
-  const [thirdAboutSectionIsVisible, thirdAboutSectionSetIsVisible] =
+  const [thirdAboutSectionIsVisible, setThirdAboutSectionIsVisible] =
     useState(false);
-  const [forthAboutSectionIsVisible, forthAboutSectionSetIsVisible] =
+  const [forthAboutSectionIsVisible, setForthAboutSectionIsVisible] =
     useState(false);
 
   let firstAboutSection = useRef();
@@ -30,27 +30,27 @@ export default function About() {
       const height = window.innerHeight;
 
       if (firstAboutSectionTop < height && firstAboutSectionTop > 0) {
-        firstAboutSectionSetIsVisible(true);
+        setFirstAboutSectionIsVisible(true);
       } else {
-        firstAboutSectionSetIsVisible(false);
+        setFirstAboutSectionIsVisible(false);
       }
 
       if (secondAboutSectionTop < height && secondAboutSectionTop > 0) {
-        secondAboutSectionSetIsVisible(true);
+        setSecondAboutSectionIsVisible(true);
       } else {
-        secondAboutSectionSetIsVisible(false);
+        setSecondAboutSectionIsVisible(false);
       }
 
       if (thirdAboutSectionTop < height && thirdAboutSectionTop > 0) {
-        thirdAboutSectionSetIsVisible(true);
+        setThirdAboutSectionIsVisible(true);
       } else {
-        thirdAboutSectionSetIsVisible(false);
+        setThirdAboutSectionIsVisible(false);
       }
 
       if (forthAboutSectionTop < height && forthAboutSectionTop > 0) {
-        forthAboutSectionSetIsVisible(true);
+        setForthAboutSectionIsVisible(true);
       } else {
-        forthAboutSectionSetIsVisible(false);
+        setForthAboutSectionIsVisible(false);
       }
     };
 
