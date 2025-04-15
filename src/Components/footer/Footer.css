@@ -1,0 +1,141 @@
+.Footer-container {
+    width: 100%;
+    height: min-content;
+    background-color: oklch(27.4% 0.006 286.033);
+    font-family: morabba-medium;
+    color: #fff;
+}
+
+.Footer-link-title , 
+.Footer-social-title , 
+.Footer-contact-title {
+    width: 100%;
+}
+
+.Footer-links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.Footer-link-item{
+    font-family: Dana-regular;
+    letter-spacing: -0.025em;
+    word-spacing: -0.1em;
+}
+
+.Footer-link{
+    color: #fff;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+}
+
+.Footer-social-links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.Footer-social-link-item{
+    margin-left: 5px;
+}
+
+.Footer-social-link{
+    color: #fff;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+}
+
+.Footer-link:hover ,
+.Footer-social-link:hover {
+    color: #d2ab67;
+    opacity: 1;
+}
+
+.Footer-contact-tel{
+    width: 100%;
+    font-family: Dana-regular;
+    letter-spacing: -0.025em;
+    word-spacing: -0.1em;
+    color: #fff;
+    opacity: 0.6;
+    text-align: right;
+}
+
+@media screen and (max-width : 768px){
+   .Footer-container-max-768{
+        margin-top: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+   } 
+   .Footer-link-title-max-768 , 
+   .Footer-social-title-max-768,
+   .Footer-contact-title-max-768 {
+        text-align: right;
+        font-size: 16px;
+    }
+    .Footer-link-item-max-768,
+    .Footer-contact-tel-max-768{
+        font-size: 14px;
+        margin-top: 8px;
+   }
+   .Footer-social-links-max-768{
+        margin-top: 8px;
+   }
+   .Footer-social-link-icon-max-768 {
+        font-size: 18px !important;
+    }
+    .Footer-link-container-max-768,
+    .Footer-social-container-max-768,
+    .Footer-contact-container-max-768{
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .Footer-contact-container-max-768{
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width : 768px){
+   .Footer-container-min-768{
+        margin-top: 40px;
+        padding: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+   } 
+   .Footer-link-title-min-768 , 
+   .Footer-social-title-min-768,
+   .Footer-contact-title-min-768 {
+        text-align: center;
+        font-size: 18px;
+    }
+    .Footer-link-item-min-768,
+    .Footer-contact-tel-min-768{
+        font-size: 16px;
+        margin-top: 10px;
+   }
+   .Footer-social-links-min-768{
+        margin-top: 10px;
+   }
+   .Footer-social-link-icon-min-768 {
+        font-size: 20px !important;
+   }
+    .Footer-link-container-min-768,
+    .Footer-social-container-min-768,
+    .Footer-contact-container-min-768{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+}
