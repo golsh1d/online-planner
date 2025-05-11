@@ -1,0 +1,90 @@
+.Usage-container{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.Usage-card{
+    width: 100%;
+    height: min-content;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #dddddd;
+    overflow: hidden;
+}
+
+.Usage-card-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Dana-medium;
+    letter-spacing: -0.025em;
+    word-spacing: -0.1em;
+}
+
+.Usage-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Dana-bold;
+    letter-spacing: -0.025em;
+    border: 1.5px solid #efefef;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.Usage-btn:hover{
+    scale: 1.03;
+}
+
+@media screen and (max-width: 768px){
+   .Usage-container-max-768 {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+   } 
+   .Usage-card-title-max-768 {
+        font-size: 16px;
+        height: 80px;
+   }
+   .Usage-btn-container-max-768{
+        padding: 8px;
+   }
+   .Usage-btn-max-768{
+        padding: 8px;
+        font-size: 14px;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .Usage-container-min-768 {
+        margin-top: 40px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+   } 
+   .Usage-card-title-min-768 {
+        font-size: 18px;
+        height: 100px;
+   }
+   .Usage-btn-container-min-768{
+        padding: 16px;
+   }
+   .Usage-btn-min-768{
+        padding: 10px;
+        font-size: 16px;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+    .Usage-container-min-1024 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .Usage-container-min-1280 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
