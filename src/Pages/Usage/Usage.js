@@ -3,6 +3,7 @@ import "./Usage.css";
 import { useState } from "react";
 import NavBar from "../../Components/navbar/NavBar";
 import Footer from "../../Components/footer/Footer";
+import Card from "../../Components/card/Card";
 
 export default function Usage() {
   const [cardInfo, setCardInfo] = useState([
@@ -74,23 +75,7 @@ export default function Usage() {
       <section className="container" dir="rtl">
         <div className="Usage-container Usage-container-max-768 Usage-container-min-768 Usage-container-min-1024 Usage-container-min-1280 Usage-container-min-1920">
           {cardInfo.map((info) => (
-            <div className="Usage-card" key={info.id}>
-              <div
-                className="Usage-card-title Usage-card-title-max-768 Usage-card-title-min-768"
-                style={{ backgroundColor: info.bgColor }}
-              >
-                {info.title}
-              </div>
-              <div className="Usage-btn-container Usage-btn-container-max-768 Usage-btn-container-min-768">
-                <a
-                  href={info.link}
-                  download
-                  className="Usage-btn Usage-btn-max-768 Usage-btn-min-768"
-                >
-                  دانلود
-                </a>
-              </div>
-            </div>
+            <Card {...info} />
           ))}
         </div>
       </section>
