@@ -1,0 +1,48 @@
+.TechDetail-container{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #eaeaea;
+}
+
+.TechDetail-title {
+    font-family: morabba-medium;
+    letter-spacing: -0.025em;
+    word-spacing: -0.1em;
+}
+
+.TechDetail-des {
+    margin-top: 5px;
+    font-family: Dana-regular;
+    word-spacing: -0.1em;
+    color: #4c4c4c;
+}
+
+@media screen and (max-width: 768px) {
+    .TechDetail-container-max-768 {
+        padding: 8px;
+        height: min-content;
+    }
+    .TechDetail-title-max-768 {
+        font-size: 14px;
+    }
+    .TechDetail-des-max-768 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .TechDetail-container-min-768 {
+        height: 70px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .TechDetail-title-min-768 {
+        font-size: 16px;
+    }
+    .TechDetail-des-min-768 {
+        font-size: 14px;
+    }
+}
