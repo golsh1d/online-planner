@@ -4,6 +4,8 @@ import "./Product.css";
 import NavBar from "../../Components/navbar/NavBar";
 import ProductScrollBar from "../../Components/productScrollbar/ProductScrollBar";
 import TechDetail from "../../Components/techDetail/TechDetail";
+import Description from "../../Components/description/Description";
+import Footer from "../../Components/footer/Footer";
 
 export default function Product() {
   const [techDetails, setTechDetails] = useState([
@@ -28,12 +30,14 @@ export default function Product() {
           <div className="Product-detail-container Product-detail-container-max-768 Product-detail-container-min-768">
             <div className="Product-tech-detail-container Product-tech-detail-container-max-768 Product-tech-detail-container-min-768 Product-tech-detail-container-min-1280">
               {techDetails.map((detail) => (
-                <TechDetail {...detail} key={detail.id}/>
+                <TechDetail {...detail} key={detail.id} />
               ))}
             </div>
+            <Description />
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

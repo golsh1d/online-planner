@@ -1,0 +1,38 @@
+.Description-container{
+    width: 100%;
+    height: min-content;
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #eaeaea;
+}
+
+.Description-title{
+    font-family: morabba-medium;
+    letter-spacing: -0.025em;
+    word-spacing: -0.1em;
+}
+
+.Description-detail{
+    margin-top: 5px;
+    font-family: Dana-regular;
+    word-spacing: -0.1em;
+    color: #4c4c4c;
+}
+
+@media screen and (max-width: 768px){
+    .Description-title-max-768{
+        font-size: 14px;
+    }
+    .Description-detail-max-768{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .Description-title-min-768{
+        font-size: 16px;
+    }
+    .Description-detail-min-768{
+        font-size: 14px;
+    }
+}
