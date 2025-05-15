@@ -11,13 +11,14 @@
     font-family: morabba-medium;
     letter-spacing: -0.025em;
     word-spacing: -0.1em;
+    color: #706d54;
 }
 
 .Description-detail{
     margin-top: 5px;
     font-family: Dana-regular;
     word-spacing: -0.1em;
-    color: #4c4c4c;
+    color: #707070;
 }
 
 @media screen and (max-width: 768px){
