@@ -1,0 +1,107 @@
+.SignUp-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SignUp-wrapper{
+    height: min-content;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #eaeaea;
+}
+
+.SignUp-title{
+    font-family: morabba-medium;
+    letter-spacing: -0.025em;
+    word-spacing: -0.1em;
+    width: 100%;
+    text-align: center;
+}
+
+.SignUp-input-wrapper{
+    width: 100%;
+}
+
+.SignUp-input{
+    font-family: Dana-medium;
+    letter-spacing: -0.025em;
+    word-spacing: -0.1em;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid #efefef;
+}
+
+.SignUp-input::placeholder{
+    font-family: Dana-medium;
+    letter-spacing: -0.025em;
+    word-spacing: -0.1em;
+}
+
+
+.SignUp-button{
+    width: 100%;
+    background-color: #e6cbb1;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Dana-medium;
+    letter-spacing: -0.025em;
+    word-spacing: -0.1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.SignUp-button:hover{
+    scale: 1.03;
+}
+
+@media screen and (max-width : 768px) {
+    .SignUp-wrapper-max-768 {
+        width: 300px;
+        padding: 16px;
+    }
+    .SignUp-title-max-768{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .SignUp-input-max-768{
+        font-size : 14px;
+        margin-bottom: 16px;
+    }
+    .SignUp-input-max-768::placeholder{
+        font-size: 12px;
+    }
+    .SignUp-button-max-768{
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width : 768px) {
+    .SignUp-wrapper-min-768 {
+        width: 500px;
+        padding: 20px;
+    }
+    .SignUp-title-min-768{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .SignUp-input-min-768{
+        font-size : 16px;
+        margin-bottom: 20px;
+    }
+    .SignUp-input-min-768::placeholder{
+        font-size: 14px;
+    }
+    .SignUp-button-min-768{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
