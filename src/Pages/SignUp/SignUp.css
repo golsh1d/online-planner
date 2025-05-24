@@ -44,7 +44,6 @@
 .SignUp-button{
     width: 100%;
     background-color: #e6cbb1;
-    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,11 +68,11 @@
     }
     .SignUp-title-max-768{
         font-size: 16px;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
     }
     .SignUp-input-max-768{
-        font-size : 14px;
-        margin-bottom: 16px;
+        font-size : 12px;
+        margin-bottom: 30px;
     }
     .SignUp-input-max-768::placeholder{
         font-size: 12px;
@@ -91,11 +90,11 @@
     }
     .SignUp-title-min-768{
         font-size: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .SignUp-input-min-768{
-        font-size : 16px;
-        margin-bottom: 20px;
+        font-size : 14px;
+        margin-bottom: 40px;
     }
     .SignUp-input-min-768::placeholder{
         font-size: 14px;
