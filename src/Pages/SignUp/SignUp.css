@@ -26,20 +26,13 @@
 
 .SignUp-input{
     font-family: Dana-medium;
-    letter-spacing: -0.025em;
-    word-spacing: -0.1em;
     width: 100%;
     border: none;
     outline: none;
     border-bottom: 1.5px solid #efefef;
-}
-
-.SignUp-input::placeholder{
-    font-family: Dana-medium;
     letter-spacing: -0.025em;
     word-spacing: -0.1em;
 }
-
 
 .SignUp-button{
     width: 100%;
@@ -63,23 +56,23 @@
 
 @media screen and (max-width : 768px) {
     .SignUp-wrapper-max-768 {
-        width: 300px;
+        width: 350px;
         padding: 16px;
     }
     .SignUp-title-max-768{
-        font-size: 16px;
+        font-size: 20px;
         margin-bottom: 20px;
     }
     .SignUp-input-max-768{
-        font-size : 12px;
+        font-size : 14px;
         margin-bottom: 30px;
     }
     .SignUp-input-max-768::placeholder{
-        font-size: 12px;
+        font-size: 14px;
     }
     .SignUp-button-max-768{
         padding: 8px;
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -89,18 +82,18 @@
         padding: 20px;
     }
     .SignUp-title-min-768{
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 30px;
     }
     .SignUp-input-min-768{
-        font-size : 14px;
+        font-size : 16px;
         margin-bottom: 40px;
     }
     .SignUp-input-min-768::placeholder{
-        font-size: 14px;
+        font-size: 16px;
     }
     .SignUp-button-min-768{
         padding: 10px;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
