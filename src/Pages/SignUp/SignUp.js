@@ -6,6 +6,14 @@ export default function SignUp() {
   const [userName, setUserName] = useState("");
   const [passWord, setPassWord] = useState("");
 
+  function setLocalStorage(studentGrade) {
+    let studentData = {
+      userName : userName , 
+      grade : studentGrade
+    }
+    localStorage.setItem("studentData", JSON.stringify(studentData));
+  }
+
   function clickBtn() {
     let userData = {
       userName: userName,
@@ -22,7 +30,8 @@ export default function SignUp() {
       .then((res) => res.json())
       .then((data) => {
         if (data.length > 0) {
-          console.log("found");
+          let studentGrade = data[0].grade;
+          setLocalStorage(studentGrade);
         } else {
           console.log("not found");
         }
