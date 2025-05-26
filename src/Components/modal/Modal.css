@@ -1,0 +1,26 @@
+.Modal-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #eaeaea;
+    font-family: Dana-medium;
+    letter-spacing: -0.025em;
+    word-spacing: -0.1em;
+    color: #fff;
+    display: none;
+}
+
+@media screen and (max-width : 768px){
+    .Modal-container-max-768 {
+        padding: 14px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width : 768px){
+    .Modal-container-min-768 {
+        padding: 16px;
+        font-size: 16px;
+    }
+}

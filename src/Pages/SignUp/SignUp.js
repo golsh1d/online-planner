@@ -1,16 +1,29 @@
 import React from "react";
 import { useState } from "react";
 import "./SignUp.css";
+import Modal from "../../Components/modal/Modal";
+import { useNavigate } from "react-router-dom";
 
 export default function SignUp() {
   const [userName, setUserName] = useState("");
   const [passWord, setPassWord] = useState("");
+  const [showSuccessModal, setShowSuccessModal] = useState();
+  const [showFaildModal, setShowFaildModal] = useState();
+  const [successModalData, setSuccessModalData] = useState({
+    display: "block",
+    bgColor: "#a9b284",
+  });
+  const [failedModalData, setFailedModalData] = useState({
+    display: "block",
+    bgColor: "#820000",
+  });
+  const navigate = useNavigate();
 
   function setLocalStorage(studentGrade) {
     let studentData = {
-      userName : userName , 
-      grade : studentGrade
-    }
+      userName: userName,
+      grade: studentGrade,
+    };
     localStorage.setItem("studentData", JSON.stringify(studentData));
   }
 
@@ -32,14 +45,24 @@ export default function SignUp() {
         if (data.length > 0) {
           let studentGrade = data[0].grade;
           setLocalStorage(studentGrade);
+          setShowSuccessModal(true);
+          setTimeout(() => {
+            navigate("/");
+          }, 2000);
         } else {
-          console.log("not found");
+          setShowFaildModal(true);
         }
       });
   }
 
   return (
     <div className="SignUp-container">
+      {showSuccessModal && (
+        <Modal {...successModalData}>شما با موفقیت وارد شدید</Modal>
+      )}
+      {showFaildModal && (
+        <Modal {...failedModalData}>اطلاعات وارد شده صحیح نمی باشد</Modal>
+      )}
       <div className="SignUp-wrapper SignUp-wrapper-max-768 SignUp-wrapper-min-768">
         <div className="SignUp-title SignUp-title-max-768 SignUp-title-min-768">
           ثبت نام
