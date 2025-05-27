@@ -48,9 +48,15 @@ export default function SignUp() {
           setShowSuccessModal(true);
           setTimeout(() => {
             navigate("/");
-          }, 2000);
+            setShowSuccessModal(false);
+          }, 1500);
         } else {
           setShowFaildModal(true);
+          setUserName("");
+          setPassWord("");
+          setTimeout(() => {
+            setShowFaildModal(false);
+          }, 1500);
         }
       });
   }
