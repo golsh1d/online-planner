@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دوازدهم و فارغ التحصیل تجربی</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="title">رشته ی تجربی (دوازدهم)</div>
+        <div class="warning-box">
+            <span class="material-symbols-outlined">
+                error
+            </span>
+            <p class="warning-msg" style="text-align: center;">
+                لطفا اطلاعات خواسته شده را در چهارچوب آزمون وارد کنید.
+            </p>
+        </div>
+        <div class="input-container isStudent">
+            <label for="isStudent">آیا شما دانش آموز هستید؟ اگر فارغ التحصیل هستید "خیر" را وارد نمایید.</label>
+            <select id="isStudent">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container score">
+            <label for="score">تراز خود را وارد نمایید.</label>
+            <input id="score" type="text" placeholder="4000/5000/6000/7000">
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container biology-first-included">
+            <label for="biology-first-included">آیا این آزمون در بخش زیست پایه (زیست 1) دارد ؟</label>
+            <select id="biology-first-included" class="biology">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container biology-first-title">
+            <label for="biology-first-title">زیست پایه (زیست 1) / تیتر</label>
+            <input class="biology" id="biology-first-title" type="text" placeholder="زیست شناسی">
+        </div>
+        <div class="input-container biology-first-start-page">
+            <label for="biology-first-start-page">زیست پایه (زیست 1) / صفحات</label>
+            <input class="biology" id="biology-first-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container biology-first-module">
+            <label for="biology-first-module">زیست پایه (زیست 1) / حل تست و تمرین</label>
+            <input class="biology" id="biology-first-module" type="text" placeholder="حل تست و تمرین">
+        </div>
+        <div class="input-container biology-second-included">
+            <label for="biology-second-included">آیا این آزمون در بخش زیست پایه (زیست 2) دارد ؟</label>
+            <select id="biology-second-included" class="biology">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container biology-second-title">
+            <label for="biology-second-title">زیست پایه (زیست 2) / تیتر</label>
+            <input class="biology" id="biology-second-title" type="text" placeholder="زیست شناسی">
+        </div>
+        <div class="input-container biology-second-start-page">
+            <label for="biology-second-start-page">زیست پایه (زیست 2) / صفحات</label>
+            <input class="biology" id="biology-second-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container biology-second-module">
+            <label for="biology-second-module">زیست پایه (زیست 2) / حل تست و تمرین</label>
+            <input class="biology" id="biology-second-module" type="text" placeholder="حل تست و تمرین">
+        </div>
+        <div class="input-container biology-last-title">
+            <label for="biology-last-title">زیست دوازدهم / تیتر</label>
+            <input class="biology" id="biology-last-title" type="text" placeholder="زیست شناسی">
+        </div>
+        <div class="input-container biology-last-start-page">
+            <label for="biology-last-start-page">زیست دوازدهم / صفحات</label>
+            <input class="biology" id="biology-last-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container biology-last-module">
+            <label for="biology-last-module">زیست دوازدهم / حل تست و تمرین</label>
+            <input class="biology" id="biology-last-module" type="text" placeholder="حل تست و تمرین">
+        </div>
+        <div class="input-container chemistry-first-title">
+            <label for="chemistry-first-title"> شیمی 1 / تیتر</label>
+            <input class="chemistry" id="chemistry-first-title" type="text" placeholder="شیمی">
+        </div>
+        <div class="input-container chemistry-first-start-page">
+            <label for="chemistry-first-start-page"> شیمی 1 / صفحات</label>
+            <input class="chemistry" id="chemistry-first-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container chemistry-first-module">
+            <label for="chemistry-first-module"> شیمی 1 / حل تست و تمرین</label>
+            <input class="chemistry" id="chemistry-first-module" type="text" placeholder="حل تست و تمرین">
+        </div>
+        <div class="input-container chemistry-second-title">
+            <label for="chemistry-second-title"> شیمی 2 / تیتر</label>
+            <input class="chemistry" id="chemistry-second-title" type="text" placeholder="شیمی">
+        </div>
+        <div class="input-container chemistry-second-start-page">
+            <label for="chemistry-second-start-page"> شیمی 2 / صفحات</label>
+            <input class="chemistry" id="chemistry-second-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container chemistry-second-module">
+            <label for="chemistry-second-module"> شیمی 2 / حل تست و تمرین</label>
+            <input class="chemistry" id="chemistry-second-module" type="text" placeholder="حل تست و تمرین">
+        </div>
+        <div class="input-container chemistry-last-title">
+            <label for="chemistry-last-title"> شیمی دوازدهم / تیتر</label>
+            <input class="chemistry" id="chemistry-last-title" type="text" placeholder="شیمی">
+        </div>
+        <div class="input-container chemistry-last-start-page">
+            <label for="chemistry-last-start-page"> شیمی دوازدهم / صفحات</label>
+            <input class="chemistry" id="chemistry-last-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container chemistry-second-included">
+            <label for="chemistry-second-included">آیا این آزمون در بخش شیمی دوازدهم (شیمی 2) دارد ؟</label>
+            <select id="chemistry-second-included" class="chemistry">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container chemistry-last-2-pages">
+            <label for="chemistry-last-2-pages"> شیمی دوازدهم (شیمی 2) / صفحات</label>
+            <input class="chemistry" id="chemistry-last-2-pages" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container chemistry-first-included">
+            <label for="chemistry-first-included">آیا این آزمون در بخش شیمی دوازدهم (شیمی 1) دارد ؟</label>
+            <select id="chemistry-first-included" class="chemistry">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container chemistry-last-1-pages">
+            <label for="chemistry-last-1-pages"> شیمی دوازدهم (شیمی 1) / صفحات</label>
+            <input class="chemistry" id="chemistry-last-1-pages" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container chemistry-last-module">
+            <label for="chemistry-last-module"> شیمی دوازدهم / حل تست و تمرین</label>
+            <input class="chemistry" id="chemistry-last-module" type="text" placeholder="حل تست و تمرین">
+        </div>
+        <div class="input-container physic-first-title">
+            <label for="physic-first-title"> فیزیک 1 / تیتر</label>
+            <input class="physic" id="physic-first-title" type="text" placeholder="فیزیک">
+        </div>
+        <div class="input-container physic-first-start-page">
+            <label for="physic-first-start-page"> فیزیک 1 / صفحات</label>
+            <input class="physic" id="physic-first-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container physic-first-module">
+            <label for="physic-first-module"> فیزیک 1 / حل تست و تمرین</label>
+            <input class="physic" id="physic-first-module" type="text" placeholder="حل تست و تمرین">
+        </div>
+        <div class="input-container physic-second-title">
+            <label for="physic-second-title"> فیزیک 2 / تیتر</label>
+            <input class="physic" id="physic-second-title" type="text" placeholder="فیزیک">
+        </div>
+        <div class="input-container physic-second-start-page">
+            <label for="physic-second-start-page"> فیزیک 2 / صفحات</label>
+            <input class="physic" id="physic-second-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container physic-second-module">
+            <label for="physic-second-module"> فیزیک 2 / حل تست و تمرین</label>
+            <input class="physic" id="physic-second-module" type="text" placeholder="حل تست و تمرین">
+        </div>
+        <div class="input-container physic-last-title">
+            <label for="physic-last-title"> فیزیک دوازدهم / تیتر</label>
+            <input class="physic" id="physic-last-title" type="text" placeholder="فیزیک">
+        </div>
+        <div class="input-container physic-last-start-page">
+            <label for="physic-last-start-page"> فیزیک دوازدهم / صفحات</label>
+            <input class="physic" id="physic-last-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container physic-last-module">
+            <label for="physic-last-module"> فیزیک دوازدهم / حل تست و تمرین</label>
+            <input class="physic" id="physic-last-module" type="text" placeholder="حل تست و تمرین">
+        </div>
+        <div class="input-container math-first-included">
+            <label for="math-first-included">آیا این آزمون در بخش مبحث های مستقل ریاضی پایه (ریاضی 1) دارد ؟</label>
+            <select id="math-first-included" class="math">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container math-first-title">
+            <label for="math-first-title"> مبحث های مستقل ریاضی پایه (ریاضی 1) / تیتر</label>
+            <input class="math" id="math-first-title" type="text" placeholder="ریاضی">
+        </div>
+        <div class="input-container math-first-start-page">
+            <label for="math-first-start-page"> مبحث های مستقل ریاضی پایه (ریاضی 1) / صفحات</label>
+            <input class="math" id="math-first-start-page" type="text" placeholder=" از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container math-first-module">
+            <label for="math-first-module"> مبحث های مستقل ریاضی پایه (ریاضی 1) / حل تست و تمرین</label>
+            <input class="math" id="math-first-module" type="text" placeholder="حل تست و تمرین">
+        </div>
+        <div class="input-container math-second-included">
+            <label for="math-second-included">آیا این آزمون در بخش مبحث های مستقل ریاضی پایه (ریاضی 2) دارد ؟</label>
+            <select id="math-second-included" class="math">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container math-second-title">
+            <label for="math-second-title"> مبحث های مستقل ریاضی پایه (ریاضی 2) / تیتر</label>
+            <input class="math" id="math-second-title" type="text" placeholder="ریاضی">
+        </div>
+        <div class="input-container math-second-start-page">
+            <label for="math-second-start-page"> مبحث های مستقل ریاضی پایه (ریاضی 2) / صفحات</label>
+            <input class="math" id="math-second-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container math-second-module">
+            <label for="math-second-module"> مبحث های مستقل ریاضی پایه (ریاضی 2) / حل تست و تمرین</label>
+            <input class="math" id="math-second-module" type="text" placeholder="حل تست و تمرین">
+        </div>
+        <div class="input-container math-last-title">
+            <label for="math-last-title"> ریاضی دوازدهم / تیتر</label>
+            <input class="math" id="math-last-title" type="text" placeholder="ریاضی">
+        </div>
+        <div class="input-container math-last-3-included">
+            <label for="math-last-3-included">آیا این آزمون در بخش ریاضی دوازدهم ( ریاضی 3 ) دارد ؟</label>
+            <select id="math-last-3-included" class="math">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container math-last-start-page">
+            <label for="math-last-start-page"> ریاضی دوازدهم ( ریاضی 3 ) / صفحات</label>
+            <input class="math" id="math-last-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container math-last-2-included">
+            <label for="math-last-2-included">آیا این آزمون در بخش ریاضی دوازدهم ( ریاضی 2 ) دارد ؟</label>
+            <select id="math-last-2-included" class="math">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container math-last-2-start-page">
+            <label for="math-last-2-start-page"> ریاضی دوازدهم ( ریاضی 2 ) / صفحات</label>
+            <input class="math" id="math-last-2-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container math-last-1-included">
+            <label for="math-last-1-included">آیا این آزمون در بخش ریاضی دوازدهم ( ریاضی 1 ) دارد ؟</label>
+            <select id="math-last-1-included" class="math">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container math-last-1-start-page">
+            <label for="math-last-1-start-page"> ریاضی دوازدهم ( ریاضی 1 ) / صفحات</label>
+            <input class="math" id="math-last-1-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container math-last-module">
+            <label for="math-last-module"> ریاضی دوازدهم / حل تست و تمرین</label>
+            <input class="math" id="math-last-module" type="text" placeholder="حل تست و تمرین">
+        </div>
+        <div class="input-container geology-included">
+            <label for="geology-included">آیا این آزمون زمین شناسی دارد ؟</label>
+            <select id="geology-included" class="geology">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container geology-title">
+            <label for="geology-title">زمین شناسی / تیتر</label>
+            <input class="geology" id="geology-title" type="text" placeholder="زمین شناسی">
+        </div>
+        <div class="input-container geology-start-page">
+            <label for="geology-start-page">زمین شناسی / صفحات</label>
+            <input class="geology" id="geology-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container geology-module">
+            <label for="geology-module">زمین شناسی / حل تست و تمرین</label>
+            <input class="geology" id="geology-module" type="text" placeholder="حل تست و تمرین">
+        </div>
+        <div class="btn-container">
+            <button class="form-btn">ثبت اطلاعات جدید</button>
+        </div>
+        <div class="btn-container">
+            <button class="form-btn clear-btn">پاک کردن اطلاعات قبلی</button>
+        </div>
+        <div class="table">
+            <div class="day-container">
+                <div class="table-day">شنبه 1</div>
+                <div class="day-plan shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">یکشنبه 1</div>
+                <div class="day-plan yek-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">دوشنبه 1</div>
+                <div class="day-plan do-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">سه شنبه 1</div>
+                <div class="day-plan se-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">چهارشنبه 1</div>
+                <div class="day-plan chahar-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">پنجشنبه 1</div>
+                <div class="day-plan panj-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">جمعه 1</div>
+                <div class="day-plan jome1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">شنبه 2</div>
+                <div class="day-plan shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">یکشنبه 2</div>
+                <div class="day-plan yek-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">دوشنبه 2</div>
+                <div class="day-plan do-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">سه شنبه 2</div>
+                <div class="day-plan se-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">چهارشنبه 2</div>
+                <div class="day-plan chahar-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">پنجشنبه 2</div>
+                <div class="day-plan panj-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">جمعه 2</div>
+                <div class="day-plan jome2"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./tajrobi3.js"></script>
+</body>
+
+</html>

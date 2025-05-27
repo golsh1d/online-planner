@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دوازدهم و فارغ التحصیل انسانی</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <div class="title">رشته ی انسانی (دوازدهم)</div>
+
+        <div class="input-container isStudent">
+            <label for="isStudent">آیا شما دانش آموز هستید؟ اگر فارغ التحصیل هستید "خیر" را وارد نمایید.</label>
+            <select id="isStudent">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+
+        <div class="input-container score">
+            <label for="score">تراز خود را وارد نمایید.</label>
+            <input id="score" type="text" placeholder="4000/5000/6000/7000">
+        </div>
+
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+
+        <div class="input-container math-3-title">
+            <label for="math-3-title">ریاضی و آمار 3 / تیتر</label>
+            <input class="math" id="math-3-title" type="text" placeholder="ریاضی">
+        </div>
+        <div class="input-container math-3-start-page">
+            <label for="math-3-start-page">ریاضی و آمار 3 / شروع صفحات</label>
+            <input class="math" id="math-3-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container math-3-end-page">
+            <label for="math-3-end-page">ریاضی و آمار 3 / پایان صفحات</label>
+            <input class="math" id="math-3-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container math-3-module">
+            <label for="math-3-module">ریاضی و آمار 3 / حل تست</label>
+            <input class="math" id="math-3-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container math-base-title">
+            <label for="math-base-title">ریاضی و آمار پایه / تیتر</label>
+            <input class="math" id="math-base-title" type="text" placeholder="ریاضی">
+        </div>
+        <div class="input-container math-base-start-page">
+            <label for="math-base-start-page">ریاضی و آمار پایه / شروع صفحات</label>
+            <input class="math" id="math-base-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container math-base-end-page">
+            <label for="math-base-end-page">ریاضی و آمار پایه / پایان صفحات</label>
+            <input class="math" id="math-base-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container math-base-module">
+            <label for="math-base-module">ریاضی و آمار پایه / حل تست</label>
+            <input class="math" id="math-base-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container adabiat-3-title">
+            <label for="adabiat-3-title"> علوم و فنون ادبی 3 / تیتر</label>
+            <input class="adabiat" id="adabiat-3-title" type="text" placeholder="علوم و فنون ادبی">
+        </div>
+        <div class="input-container adabiat-3-start-page">
+            <label for="adabiat-3-start-page"> علوم و فنون ادبی 3 / شروع صفحات</label>
+            <input class="adabiat" id="adabiat-3-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container adabiat-3-end-page">
+            <label for="adabiat-3-end-page"> علوم و فنون ادبی 3 / پایان صفحات</label>
+            <input class="adabiat" id="adabiat-3-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container adabiat-3-module">
+            <label for="adabiat-3-module"> علوم و فنون ادبی 3 / حل تست</label>
+            <input class="adabiat" id="adabiat-3-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container adabiat-base-title">
+            <label for="adabiat-base-title"> علوم و فنون ادبی پایه / تیتر</label>
+            <input class="adabiat" id="adabiat-base-title" type="text" placeholder="علوم و فنون ادبی">
+        </div>
+        <div class="input-container adabiat-base-start-page">
+            <label for="adabiat-base-start-page"> علوم و فنون ادبی پایه / شروع صفحات</label>
+            <input class="adabiat" id="adabiat-base-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container adabiat-3-end-page">
+            <label for="adabiat-base-end-page"> علوم و فنون ادبی پایه / پایان صفحات</label>
+            <input class="adabiat" id="adabiat-base-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container adabiat-base-module">
+            <label for="adabiat-base-module"> علوم و فنون ادبی پایه / حل تست</label>
+            <input class="adabiat" id="adabiat-base-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container jame-shenasi-3-title">
+            <label for="jame-shenasi-3-title"> جامعه شناسی 3 / تیتر</label>
+            <input class="jame-shenasi" id="jame-shenasi-3-title" type="text" placeholder="جامعه شناسی">
+        </div>
+        <div class="input-container jame-shenasi-3-start-page">
+            <label for="jame-shenasi-3-start-page"> جامعه شناسی 3 / شروع صفحات</label>
+            <input class="jame-shenasi" id="jame-shenasi-3-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container jame-shenasi-3-end-page">
+            <label for="jame-shenasi-3-end-page"> جامعه شناسی 3 / پایان صفحات</label>
+            <input class="jame-shenasi" id="jame-shenasi-3-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container jame-shenasi-3-module">
+            <label for="jame-shenasi-3-module"> جامعه شناسی 3 / حل تست</label>
+            <input class="jame-shenasi" id="jame-shenasi-3-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container jame-shenasi-2-title">
+            <label for="jame-shenasi-2-title"> جامعه شناسی 2 / تیتر</label>
+            <input class="jame-shenasi" id="jame-shenasi-2-title" type="text" placeholder="جامعه شناسی">
+        </div>
+        <div class="input-container jame-shenasi-2-start-page">
+            <label for="jame-shenasi-2-start-page"> جامعه شناسی 2 / شروع صفحات</label>
+            <input class="jame-shenasi" id="jame-shenasi-2-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container jame-shenasi-2-end-page">
+            <label for="jame-shenasi-2-end-page"> جامعه شناسی 2 / پایان صفحات</label>
+            <input class="jame-shenasi" id="jame-shenasi-2-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container jame-shenasi-2-module">
+            <label for="jame-shenasi-2-module"> جامعه شناسی 2 / حل تست</label>
+            <input class="jame-shenasi" id="jame-shenasi-2-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container jame-shenasi-1-title">
+            <label for="jame-shenasi-1-title"> جامعه شناسی 1 / تیتر</label>
+            <input class="jame-shenasi" id="jame-shenasi-1-title" type="text" placeholder="جامعه شناسی">
+        </div>
+        <div class="input-container jame-shenasi-1-start-page">
+            <label for="jame-shenasi-1-start-page"> جامعه شناسی 1 / شروع صفحات</label>
+            <input class="jame-shenasi" id="jame-shenasi-1-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container jame-shenasi-1-end-page">
+            <label for="jame-shenasi-1-end-page"> جامعه شناسی 1 / پایان صفحات</label>
+            <input class="jame-shenasi" id="jame-shenasi-1-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container jame-shenasi-1-module">
+            <label for="jame-shenasi-1-module"> جامعه شناسی 1 / حل تست</label>
+            <input class="jame-shenasi" id="jame-shenasi-1-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container arabi-3-title">
+            <label for="arabi-3-title"> عربی زبان قرآن 3 / تیتر</label>
+            <input class="arabi" id="arabi-3-title" type="text" placeholder="عربی زبان قرآن">
+        </div>
+        <div class="input-container arabi-3-start-page">
+            <label for="arabi-3-start-page"> عربی زبان قرآن 3 / شروع صفحات</label>
+            <input class="arabi" id="arabi-3-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container arabi-3-end-page">
+            <label for="arabi-3-end-page"> عربی زبان قرآن 3 / پایان صفحات</label>
+            <input class="arabi" id="arabi-3-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container arabi-3-module">
+            <label for="arabi-3-module"> عربی زبان قرآن 3 / حل تست</label>
+            <input class="arabi" id="arabi-3-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container arabi-base-title">
+            <label for="arabi-base-title"> عربی زبان قرآن پایه / تیتر</label>
+            <input class="arabi" id="arabi-base-title" type="text" placeholder="عربی زبان قرآن">
+        </div>
+        <div class="input-container arabi-base-start-page">
+            <label for="arabi-base-start-page"> عربی زبان قرآن پایه / شروع صفحات</label>
+            <input class="arabi" id="arabi-base-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container arabi-base-end-page">
+            <label for="arabi-base-end-page"> عربی زبان قرآن پایه / پایان صفحات</label>
+            <input class="arabi" id="arabi-base-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container arabi-base-module">
+            <label for="arabi-base-module"> عربی زبان قرآن پایه / حل تست</label>
+            <input class="arabi" id="arabi-base-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container tarikh-3-title">
+            <label for="tarikh-3-title">تاریخ 3 / تیتر</label>
+            <input class="tarikh" id="tarikh-3-title" type="text" placeholder="تاریخ">
+        </div>
+        <div class="input-container tarikh-3-start-page">
+            <label for="tarikh-3-start-page">تاریخ 3 / شروع صفحات</label>
+            <input class="tarikh" id="tarikh-3-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container tarikh-3-end-page">
+            <label for="tarikh-3-end-page">تاریخ 3 / پایان صفحات</label>
+            <input class="tarikh" id="tarikh-3-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container tarikh-3-module">
+            <label for="tarikh-3-module">تاریخ 3 / حل تست</label>
+            <input class="tarikh" id="tarikh-3-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container tarikh-2-title">
+            <label for="tarikh-2-title">تاریخ 2 / تیتر</label>
+            <input class="tarikh" id="tarikh-2-title" type="text" placeholder="تاریخ">
+        </div>
+        <div class="input-container tarikh-2-start-page">
+            <label for="tarikh-2-start-page">تاریخ 2 / شروع صفحات</label>
+            <input class="tarikh" id="tarikh-2-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container tarikh-2-end-page">
+            <label for="tarikh-2-end-page">تاریخ 2 / پایان صفحات</label>
+            <input class="tarikh" id="tarikh-2-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container tarikh-2-module">
+            <label for="tarikh-2-module">تاریخ 2 / حل تست</label>
+            <input class="tarikh" id="tarikh-2-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container tarikh-1-title">
+            <label for="tarikh-1-title">تاریخ 1 / تیتر</label>
+            <input class="tarikh" id="tarikh-1-title" type="text" placeholder="تاریخ">
+        </div>
+        <div class="input-container tarikh-1-start-page">
+            <label for="tarikh-1-start-page">تاریخ 1 / شروع صفحات</label>
+            <input class="tarikh" id="tarikh-1-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container tarikh-1-end-page">
+            <label for="tarikh-1-end-page">تاریخ 1 / پایان صفحات</label>
+            <input class="tarikh" id="tarikh-1-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container tarikh-1-module">
+            <label for="tarikh-1-module">تاریخ 1 / حل تست</label>
+            <input class="tarikh" id="tarikh-1-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container joghrafi-3-title">
+            <label for="joghrafi-3-title">جغرافیا 3 / تیتر</label>
+            <input class="joghrafi" id="joghrafi-3-title" type="text" placeholder="جغرافیای ایران">
+        </div>
+        <div class="input-container joghrafi-3-start-page">
+            <label for="joghrafi-3-start-page">جغرافیا 3 / شروع صفحات</label>
+            <input class="joghrafi" id="joghrafi-3-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container joghrafi-3-end-page">
+            <label for="joghrafi-3-end-page">جغرافیا 3 / پایان صفحات</label>
+            <input class="joghrafi" id="joghrafi-3-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container joghrafi-3-module">
+            <label for="joghrafi-3-module">جغرافیا 3 / حل تست</label>
+            <input class="joghrafi" id="joghrafi-3-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container joghrafi-2-title">
+            <label for="joghrafi-2-title">جغرافیا 2 / تیتر</label>
+            <input class="joghrafi" id="joghrafi-2-title" type="text" placeholder="جغرافیای ایران">
+        </div>
+        <div class="input-container joghrafi-2-start-page">
+            <label for="joghrafi-2-start-page">جغرافیا 2 / شروع صفحات</label>
+            <input class="joghrafi" id="joghrafi-2-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container joghrafi-2-end-page">
+            <label for="joghrafi-2-end-page">جغرافیا 2 / پایان صفحات</label>
+            <input class="joghrafi" id="joghrafi-2-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container joghrafi-2-module">
+            <label for="joghrafi-2-module">جغرافیا 2 / حل تست</label>
+            <input class="joghrafi" id="joghrafi-2-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container joghrafi-1-title">
+            <label for="joghrafi-1-title">جغرافیا 1 / تیتر</label>
+            <input class="joghrafi" id="joghrafi-1-title" type="text" placeholder="جغرافیای ایران">
+        </div>
+        <div class="input-container joghrafi-1-start-page">
+            <label for="joghrafi-1-start-page">جغرافیا 1 / شروع صفحات</label>
+            <input class="joghrafi" id="joghrafi-1-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container joghrafi-1-end-page">
+            <label for="joghrafi-1-end-page">جغرافیا 1 / پایان صفحات</label>
+            <input class="joghrafi" id="joghrafi-1-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container joghrafi-1-module">
+            <label for="joghrafi-1-module">جغرافیا 1 / حل تست</label>
+            <input class="joghrafi" id="joghrafi-1-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container falsafe-3-title">
+            <label for="falsafe-3-title">فلسفه دوازدهم / تیتر</label>
+            <input class="mantegh" id="falsafe-3-title" type="text" placeholder="فلسفه">
+        </div>
+        <div class="input-container falsafe-3-start-page">
+            <label for="falsafe-3-start-page">فلسفه دوازدهم / شروع صفحات</label>
+            <input class="mantegh" id="falsafe-3-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container falsafe-3-end-page">
+            <label for="falsafe-3-end-page">فلسفه دوازدهم / پایان صفحات</label>
+            <input class="mantegh" id="falsafe-3-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container falsafe-3-module">
+            <label for="falsafe-3-module">فلسفه دوازدهم / حل تست</label>
+            <input class="mantegh" id="falsafe-3-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container falsafe-2-title">
+            <label for="falsafe-2-title">فلسفه یازدهم / تیتر</label>
+            <input class="mantegh" id="falsafe-2-title" type="text" placeholder="فلسفه">
+        </div>
+        <div class="input-container falsafe-2-start-page">
+            <label for="falsafe-2-start-page">فلسفه یازدهم / شروع صفحات</label>
+            <input class="mantegh" id="falsafe-2-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container falsafe-2-end-page">
+            <label for="falsafe-2-end-page">فلسفه یازدهم / پایان صفحات</label>
+            <input class="mantegh" id="falsafe-2-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container falsafe-2-module">
+            <label for="falsafe-2-module">فلسفه یازدهم / حل تست</label>
+            <input class="mantegh" id="falsafe-2-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container mantegh-title">
+            <label for="mantegh-title">منطق / تیتر</label>
+            <input class="mantegh" id="mantegh-title" type="text" placeholder="منطق">
+        </div>
+        <div class="input-container mantegh-start-page">
+            <label for="mantegh-start-page">منطق / شروع صفحات</label>
+            <input class="mantegh" id="mantegh-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container mantegh-end-page">
+            <label for="mantegh-end-page">منطق / پایان صفحات</label>
+            <input class="mantegh" id="mantegh-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container mantegh-module">
+            <label for="mantegh-module">منطق / حل تست</label>
+            <input class="mantegh" id="mantegh-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container eghtesad-title">
+            <label for="eghtesad-title">اقتصاد / تیتر</label>
+            <input class="eghtesad" id="eghtesad-title" type="text" placeholder="اقتصاد">
+        </div>
+        <div class="input-container eghtesad-start-page">
+            <label for="eghtesad-start-page">اقتصاد / شروع صفحات</label>
+            <input class="eghtesad" id="eghtesad-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container eghtesad-end-page">
+            <label for="eghtesad-end-page">اقتصاد / پایان صفحات</label>
+            <input class="eghtesad" id="eghtesad-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container eghtesad-module">
+            <label for="eghtesad-module">اقتصاد / حل تست</label>
+            <input class="eghtesad" id="eghtesad-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container ravan-shenasi-title">
+            <label for="ravan-shenasi-title">روان شناسی / تیتر</label>
+            <input class="ravan-shenasi" id="ravan-shenasi-title" type="text" placeholder="روان شناسی">
+        </div>
+        <div class="input-container ravan-shenasi-start-page">
+            <label for="ravan-shenasi-start-page">روان شناسی / شروع صفحات</label>
+            <input class="ravan-shenasi" id="ravan-shenasi-start-page" type="text" placeholder="1">
+        </div>
+        <div class="input-container ravan-shenasi-end-page">
+            <label for="ravan-shenasi-end-page">روان شناسی / پایان صفحات</label>
+            <input class="ravan-shenasi" id="ravan-shenasi-end-page" type="text" placeholder="1000">
+        </div>
+        <div class="input-container ravan-shenasi-module">
+            <label for="ravan-shenasi-module">روان شناسی / حل تست</label>
+            <input class="ravan-shenasi" id="ravan-shenasi-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="btn-container">
+            <button class="form-btn">ثبت اطلاعات جدید</button>
+        </div>
+
+        <div class="btn-container">
+            <button class="form-btn clear-btn">پاک کردن اطلاعات قبلی</button>
+        </div>
+
+        <div class="table">
+            <div class="day-container">
+                <div class="table-day">شنبه 1</div>
+                <div class="day-plan shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">یکشنبه 1</div>
+                <div class="day-plan yek-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">دوشنبه 1</div>
+                <div class="day-plan do-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">سه شنبه 1</div>
+                <div class="day-plan se-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">چهارشنبه 1</div>
+                <div class="day-plan chahar-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">پنجشنبه 1</div>
+                <div class="day-plan panj-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">جمعه 1</div>
+                <div class="day-plan jome1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">شنبه 2</div>
+                <div class="day-plan shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">یکشنبه 2</div>
+                <div class="day-plan yek-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">دوشنبه 2</div>
+                <div class="day-plan do-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">سه شنبه 2</div>
+                <div class="day-plan se-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">چهارشنبه 2</div>
+                <div class="day-plan chahar-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">پنجشنبه 2</div>
+                <div class="day-plan panj-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">جمعه 2</div>
+                <div class="day-plan jome2"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./ensani3.js"></script>
+</body>
+
+</html>

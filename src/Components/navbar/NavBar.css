@@ -36,6 +36,7 @@
     letter-spacing: -0.025em;
     word-spacing: -0.1em;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .NavBar-links:hover{
@@ -182,10 +183,12 @@
 }
 
 .NavBar-side-links{
+    width: 100%;
     display: flex;
     align-items: center;
     color: #000;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .NavBar-side-list-item:hover .NavBar-side-links,

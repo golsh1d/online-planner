@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دوازدهم ریاضی</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="title">رشته ی ریاضی (دوازدهم)</div>
+        <div class="warning-box">
+            <span class="material-symbols-outlined">
+                error
+            </span>
+            <p class="warning-msg" style="text-align: center;">
+                لطفا اطلاعات خواسته شده را در چهارچوب آزمون وارد کنید.
+            </p>
+        </div>
+        <div class="input-container score">
+            <label for="score">تراز خود را وارد نمایید.</label>
+            <input id="score" type="text" placeholder="4000/5000/6000/7000">
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+
+        <div class="input-container hesaban-2-title">
+            <label for="hesaban-2-title">حسابان 2 / تیتر</label>
+            <input class="hesaban" id="hesaban-2-title" type="text" placeholder="حسابان">
+        </div>
+        <div class="input-container hesaban-2-start-page">
+            <label for="hesaban-2-start-page">حسابان 2 / صفحات</label>
+            <input class="hesaban" id="hesaban-2-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container hesaban-1-included">
+            <label for="hesaban-1-included">آیا این آزمون در بخش حسابان 2 (حسابان 1) دارد ؟</label>
+            <select id="hesaban-1-included" class="hesaban">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container hesaban-1-start-page">
+            <label for="hesaban-1-start-page">حسابان 2 (حسابان 1) / صفحات</label>
+            <input class="hesaban" id="hesaban-1-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container hesaban-math-included">
+            <label for="hesaban-math-included">آیا این آزمون در بخش حسابان 2 (ریاضی 1) دارد ؟</label>
+            <select id="hesaban-math-included" class="hesaban">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container hesaban-math-start-page">
+            <label for="hesaban-math-start-page">حسابان 2 (ریاضی 1) / صفحات</label>
+            <input class="hesaban" id="hesaban-math-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container hesaban-2-module">
+            <label for="hesaban-2-module">حسابان 2 / حل تست</label>
+            <input class="hesaban" id="hesaban-2-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container geometry-3-title">
+            <label for="geometry-3-title"> هندسه 3 / تیتر</label>
+            <input class="geometry" id="geometry-3-title" type="text" placeholder="هندسه">
+        </div>
+        <div class="input-container geometry-3-start-page">
+            <label for="geometry-3-start-page"> هندسه 3 / صفحات</label>
+            <input class="geometry" id="geometry-3-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container geometry-3-module">
+            <label for="geometry-3-module"> هندسه 3 / حل تست</label>
+            <input class="geometry" id="geometry-3-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container geometry-2-included">
+            <label for="geometry-2-included">آیا این آزمون در بخش هندسه 2 و آمار و احتمال (هندسه 2) دارد ؟</label>
+            <select id="geometry-2-included" class="geometry">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container amar-2-included">
+            <label for="amar-2-included">آیا این آزمون در بخش هندسه 2 و آمار و احتمال (آمار و احتمال) دارد ؟</label>
+            <select id="amar-2-included" class="geometry">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container geometry-2-title">
+            <label for="geometry-2-title"> هندسه 2 و آمار و احتمال / تیتر</label>
+            <input class="geometry" id="geometry-2-title" type="text" placeholder="هندسه">
+        </div>
+        <div class="input-container geometry-2-start-page">
+            <label for="geometry-2-start-page"> هندسه 2 و آمار و احتمال / صفحات</label>
+            <input class="geometry" id="geometry-2-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container amar-math-2-included">
+            <label for="amar-math-2-included">آیا این آزمون در بخش هندسه 2 و آمار و احتمال (ریاضی 1) دارد ؟</label>
+            <select id="amar-math-2-included" class="geometry">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container amar-math-2-title">
+            <label for="amar-math-2-title"> هندسه 2 و آمار و احتمال (ریاضی 1) / تیتر</label>
+            <input class="geometry" id="amar-math-2-title" type="text" placeholder="ریاضی">
+        </div>
+        <div class="input-container amar-math-2-start-page">
+            <label for="amar-math-2-start-page"> هندسه 2 و آمار و احتمال (ریاضی 1) / صفحات</label>
+            <input class="geometry" id="amar-math-2-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container geometry-2-module">
+            <label for="geometry-2-module"> هندسه 2 و آمار و احتمال / حل تست</label>
+            <input class="geometry" id="geometry-2-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container geometry-1-included">
+            <label for="geometry-1-included">آیا این آزمون در بخش هندسه 1 و آمار و احتمال (هندسه 1) دارد ؟</label>
+            <select id="geometry-1-included" class="geometry">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container amar-1-included">
+            <label for="amar-1-included">آیا این آزمون در بخش هندسه 1 و آمار و احتمال (آمار و احتمال) دارد ؟</label>
+            <select id="amar-1-included" class="geometry">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container geometry-1-title">
+            <label for="geometry-1-title"> هندسه 1 و آمار و احتمال / تیتر</label>
+            <input class="geometry" id="geometry-1-title" type="text" placeholder="هندسه">
+        </div>
+        <div class="input-container geometry-1-start-page">
+            <label for="geometry-1-start-page"> هندسه 1 و آمار و احتمال / صفحات</label>
+            <input class="geometry" id="geometry-1-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container amar-math-1-included">
+            <label for="amar-math-1-included">آیا این آزمون در بخش هندسه 1 و آمار و احتمال (ریاضی 1) دارد ؟</label>
+            <select id="amar-math-1-included" class="geometry">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container amar-math-1-title">
+            <label for="amar-math-1-title"> هندسه 1 و آمار و احتمال (ریاضی 1) / تیتر</label>
+            <input class="geometry" id="amar-math-1-title" type="text" placeholder="ریاضی">
+        </div>
+        <div class="input-container amar-math-1-start-page">
+            <label for="amar-math-1-start-page"> هندسه 1 و آمار و احتمال (ریاضی 1) / صفحات</label>
+            <input class="geometry" id="amar-math-1-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container geometry-1-module">
+            <label for="geometry-1-module"> هندسه 1 و آمار و احتمال / حل تست</label>
+            <input class="geometry" id="geometry-1-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container gosaste-title">
+            <label for="gosaste-title">گسسته / تیتر</label>
+            <input class="gosaste" id="gosaste-title" type="text" placeholder="گسسته">
+        </div>
+        <div class="input-container gosaste-start-page">
+            <label for="gosaste-start-page">گسسته / صفحات</label>
+            <input class="gosaste" id="gosaste-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container gosaste-math-1-included">
+            <label for="gosaste-math-1-included">آیا این آزمون در بخش گسسته (ریاضی 1) دارد ؟</label>
+            <select id="gosaste-math-1-included" class="gosaste">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container gosaste-math-1-title">
+            <label for="gosaste-math-1-title"> گسسته (ریاضی 1) / تیتر</label>
+            <input class="gosaste" id="gosaste-math-1-title" type="text" placeholder="ریاضی">
+        </div>
+        <div class="input-container gosaste-math-1-start-page">
+            <label for="gosaste-math-1-start-page">گسسته (ریاضی 1) / صفحات</label>
+            <input class="gosaste" id="gosaste-math-1-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container gosaste-module">
+            <label for="gosaste-module">گسسته / حل تست</label>
+            <input class="gosaste" id="gosaste-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container physic-3-title">
+            <label for="physic-3-title"> فیزیک 3 / تیتر</label>
+            <input class="physic" id="physic-3-title" type="text" placeholder="فیزیک">
+        </div>
+        <div class="input-container physic-3-start-page">
+            <label for="physic-3-start-page"> فیزیک 3 / صفحات</label>
+            <input class="physic" id="physic-3-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container physic-3-module">
+            <label for="physic-3-module"> فیزیک 3 / حل تست</label>
+            <input class="physic" id="physic-3-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container physic-2-title">
+            <label for="physic-2-title"> فیزیک 2 / تیتر</label>
+            <input class="physic" id="physic-2-title" type="text" placeholder="فیزیک">
+        </div>
+        <div class="input-container physic-2-start-page">
+            <label for="physic-2-start-page"> فیزیک 2 / صفحات</label>
+            <input class="physic" id="physic-2-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container physic-2-module">
+            <label for="physic-2-module"> فیزیک 2 / حل تست</label>
+            <input class="physic" id="physic-2-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container physic-1-title">
+            <label for="physic-1-title"> فیزیک 1 / تیتر</label>
+            <input class="physic" id="physic-1-title" type="text" placeholder="فیزیک">
+        </div>
+        <div class="input-container physic-1-start-page">
+            <label for="physic-1-start-page"> فیزیک 1 / صفحات</label>
+            <input class="physic" id="physic-1-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container physic-1-module">
+            <label for="physic-1-module"> فیزیک 1 / حل تست</label>
+            <input class="physic" id="physic-1-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container chemistry-3-title">
+            <label for="chemistry-3-title"> شیمی 3 / تیتر</label>
+            <input class="chemistry" id="chemistry-3-title" type="text" placeholder="شیمی">
+        </div>
+        <div class="input-container chemistry-3-start-page">
+            <label for="chemistry-3-start-page"> شیمی 3 / صفحات</label>
+            <input class="chemistry" id="chemistry-3-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container chemistry-3-2-included">
+            <label for="chemistry-3-2-included">آیا این آزمون در بخش شیمی 3 (شیمی2) دارد ؟</label>
+            <select id="chemistry-3-2-included" class="chemistry">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container chemistry-3-2-start-page">
+            <label for="chemistry-3-2-start-page"> شیمی 3 (شیمی2) / صفحات</label>
+            <input class="chemistry" id="chemistry-3-2-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container chemistry-3-1-included">
+            <label for="chemistry-3-1-included">آیا این آزمون در بخش شیمی 3 (شیمی1) دارد ؟</label>
+            <select id="chemistry-3-1-included" class="chemistry">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container chemistry-3-1-start-page">
+            <label for="chemistry-3-1-start-page"> شیمی 3 (شیمی1) / صفحات</label>
+            <input class="chemistry" id="chemistry-3-1-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container chemistry-3-module">
+            <label for="chemistry-3-module"> شیمی 3 / حل تست</label>
+            <input class="chemistry" id="chemistry-3-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container chemistry-2-title">
+            <label for="chemistry-2-title"> شیمی 2 / تیتر</label>
+            <input class="chemistry" id="chemistry-2-title" type="text" placeholder="شیمی">
+        </div>
+        <div class="input-container chemistry-2-start-page">
+            <label for="chemistry-2-start-page"> شیمی 2 / صفحات</label>
+            <input class="chemistry" id="chemistry-2-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container chemistry-2-module">
+            <label for="chemistry-2-module"> شیمی 2 / حل تست</label>
+            <input class="chemistry" id="chemistry-2-module" type="text" placeholder="حل تست">
+        </div>
+        <div class="input-container chemistry-1-title">
+            <label for="chemistry-1-title"> شیمی 1 / تیتر</label>
+            <input class="chemistry" id="chemistry-1-title" type="text" placeholder="شیمی">
+        </div>
+        <div class="input-container chemistry-1-start-page">
+            <label for="chemistry-1-start-page"> شیمی 1 / صفحات</label>
+            <input class="chemistry" id="chemistry-1-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container chemistry-1-module">
+            <label for="chemistry-1-module"> شیمی 1 / حل تست</label>
+            <input class="chemistry" id="chemistry-1-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="input-container math-base-included">
+            <label for="math-base-included">آیا این آزمون در بخش مباحث مستقل ریاضی پایه (ریاضی 1) دارد ؟</label>
+            <select id="math-base-included" class="math">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container math-base-title">
+            <label for="math-base-title"> مباحث مستقل ریاضی پایه (ریاضی 1) / تیتر</label>
+            <input class="math" id="math-base-title" type="text" placeholder="ریاضی">
+        </div>
+        <div class="input-container math-base-start-page">
+            <label for="math-base-start-page"> مباحث مستقل ریاضی پایه (ریاضی 1) / صفحات</label>
+            <input class="math" id="math-base-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container math-base-hesaban-included">
+            <label for="math-base-hesaban-included">آیا این آزمون در بخش مباحث مستقل ریاضی پایه (حسابان 1) دارد
+                ؟</label>
+            <select id="math-base-hesaban-included" class="math">
+                <option value="">...</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+            </select>
+        </div>
+        <div>
+            <p class="required">
+                پر کردن این باکس الزامی است.
+            </p>
+        </div>
+        <div class="input-container math-base-hesaban-title">
+            <label for="math-base-hesaban-title"> مباحث مستقل ریاضی پایه (حسابان 1) / تیتر</label>
+            <input class="math" id="math-base-hesaban-title" type="text" placeholder="ریاضی">
+        </div>
+        <div class="input-container math-base-hesaban-start-page">
+            <label for="math-base-hesaban-start-page"> مباحث مستقل ریاضی پایه (حسابان 1) / صفحات</label>
+            <input class="math" id="math-base-hesaban-start-page" type="text" placeholder="از صفحه ... تا صفحه ...">
+        </div>
+        <div class="input-container math-base-module">
+            <label for="math-base-module"> مباحث مستقل ریاضی پایه / حل تست</label>
+            <input class="math" id="math-base-module" type="text" placeholder="حل تست">
+        </div>
+
+        <div class="btn-container">
+            <button class="form-btn">ثبت اطلاعات جدید</button>
+        </div>
+
+        <div class="btn-container">
+            <button class="form-btn clear-btn">پاک کردن اطلاعات قبلی</button>
+        </div>
+
+        <div class="table">
+            <div class="day-container">
+                <div class="table-day">شنبه 1</div>
+                <div class="day-plan shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">یکشنبه 1</div>
+                <div class="day-plan yek-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">دوشنبه 1</div>
+                <div class="day-plan do-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">سه شنبه 1</div>
+                <div class="day-plan se-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">چهارشنبه 1</div>
+                <div class="day-plan chahar-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">پنجشنبه 1</div>
+                <div class="day-plan panj-shanbe1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">جمعه 1</div>
+                <div class="day-plan jome1"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">شنبه 2</div>
+                <div class="day-plan shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">یکشنبه 2</div>
+                <div class="day-plan yek-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">دوشنبه 2</div>
+                <div class="day-plan do-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">سه شنبه 2</div>
+                <div class="day-plan se-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">چهارشنبه 2</div>
+                <div class="day-plan chahar-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">پنجشنبه 2</div>
+                <div class="day-plan panj-shanbe2"></div>
+            </div>
+            <div class="day-container">
+                <div class="table-day">جمعه 2</div>
+                <div class="day-plan jome2"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./riazi3.js"></script>
+</body>
+
+</html>

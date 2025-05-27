@@ -17,7 +17,13 @@ export default function NavBar() {
   const [isLogin, setIsLogin] = useState();
 
   useEffect(() => {
-    setIsLogin(false);
+    let studentData = JSON.parse(localStorage.getItem("studentData"));
+
+    if (studentData) {
+      setIsLogin(true);
+    } else {
+      setIsLogin(false);
+    }
   }, []);
 
   let sideNav = useRef();
@@ -33,6 +39,36 @@ export default function NavBar() {
     overLay.current.style.display = "none";
   }
 
+  function logOut() {
+    localStorage.clear();
+    setIsLogin(false);
+  }
+
+  function getThePlan() {
+    let studentData = JSON.parse(localStorage.getItem("studentData"));
+
+    if (studentData.grade === "12taj") {
+      window.open("/plannerPages/tajrobi3.html", "_blank");
+    } else if (studentData.grade === "11taj") {
+      window.open("/plannerPages/tajrobi2.html", "_blank");
+    } else if (studentData.grade === "10taj") {
+      window.open("/plannerPages/tajrobi1.html", "_blank");
+    } else if (studentData.grade === "12ens") {
+      window.open("/plannerPages/ensani3.html", "_blank");
+    } else if (studentData.grade === "11ens") {
+      window.open("/plannerPages/ensani2.html", "_blank");
+    } else if (studentData.grade === "10ens") {
+      window.open("/plannerPages/ensani1.html", "_blank");
+    } else if (studentData.grade === "12riazi") {
+      window.open("/plannerPages/riazi3.html", "_blank");
+    } else if (studentData.grade === "11riazi") {
+      window.open("/plannerPages/riazi2.html", "_blank");
+    } else if (studentData.grade === "10riazi") {
+      window.open("/plannerPages/riazi1.html", "_blank");
+    } else if (studentData.grade === "nohom") {
+      window.open("/plannerPages/nohom.html", "_blank");
+    }
+  }
   return (
     <>
       <nav
@@ -70,12 +106,12 @@ export default function NavBar() {
             </li>
             {isLogin && (
               <li className="NavBar-list-item-min-1920 NavBar-list-item-min-1280 NavBar-list-item-min-1024 NavBar-list-item-min-768">
-                <Link
+                <span
                   className="NavBar-links NavBar-links-min-1920 NavBar-links-min-1280 NavBar-links-min-1024 NavBar-links-min-768"
-                  to="/onlinePlanner"
+                  onClick={getThePlan}
                 >
                   برنامه
-                </Link>
+                </span>
               </li>
             )}
           </ul>
@@ -85,7 +121,10 @@ export default function NavBar() {
             <>
               <div className="NavBar-logout-container">
                 <PersonIcon className="NavBar-user-icon NavBar-user-icon-min-1280 NavBar-user-icon-min-768" />
-                <div className="NavBar-logout NavBar-logout-min-1280 NavBar-logout-min-768">
+                <div
+                  className="NavBar-logout NavBar-logout-min-1280 NavBar-logout-min-768"
+                  onClick={logOut}
+                >
                   <LogoutIcon className="NavBar-logout-icon NavBar-logout-icon-min-1280 NavBar-logout-icon-min-768" />
                   <span>خروج</span>
                 </div>
@@ -137,15 +176,15 @@ export default function NavBar() {
             </li>
             {isLogin && (
               <li className="NavBar-side-list-item">
-                <Link to="/onlinePlanner" className="NavBar-side-links">
+                <span onClick={getThePlan} className="NavBar-side-links">
                   <EditCalendarRoundedIcon className="NavBar-side-icon" />
                   <span>برنامه</span>
-                </Link>
+                </span>
               </li>
             )}
           </ul>
           {isLogin ? (
-            <div className="NavBar-side-logout-container">
+            <div className="NavBar-side-logout-container" onClick={logOut}>
               <LogoutIcon className="NavBar-side-icon" />
               <span>خروج</span>
             </div>
