@@ -17,13 +17,22 @@ export default function NavBar() {
   const [isLogin, setIsLogin] = useState();
 
   useEffect(() => {
-    let studentData = JSON.parse(localStorage.getItem("studentData"));
+    let studentData = {
+      userName: "userName",
+      grade: "12taj",
+    };
 
-    if (studentData) {
-      setIsLogin(true);
-    } else {
-      setIsLogin(false);
-    }
+    localStorage.setItem("studentData", JSON.stringify(studentData));
+
+    setIsLogin(true);
+
+    // let studentData = JSON.parse(localStorage.getItem("studentData"));
+
+    // if (studentData) {
+    //   setIsLogin(true);
+    // } else {
+    //   setIsLogin(false);
+    // }
   }, []);
 
   let sideNav = useRef();
@@ -48,27 +57,58 @@ export default function NavBar() {
     let studentData = JSON.parse(localStorage.getItem("studentData"));
 
     if (studentData.grade === "12taj") {
-      window.open("/plannerPages/tajrobi3.html", "_blank");
+      window.open(
+        `${process.env.PUBLIC_URL}/plannerPages/tajrobi3.html`,
+        "_blank"
+      );
     } else if (studentData.grade === "11taj") {
-      window.open("/plannerPages/tajrobi2.html", "_blank");
+      window.open(
+        `${process.env.PUBLIC_URL}/plannerPages/tajrobi2.html`,
+        "_blank"
+      );
     } else if (studentData.grade === "10taj") {
-      window.open("/plannerPages/tajrobi1.html", "_blank");
+      window.open(
+        `${process.env.PUBLIC_URL}/plannerPages/tajrobi1.html`,
+        "_blank"
+      );
     } else if (studentData.grade === "12ens") {
-      window.open("/plannerPages/ensani3.html", "_blank");
+      window.open(
+        `${process.env.PUBLIC_URL}/plannerPages/ensani3.html`,
+        "_blank"
+      );
     } else if (studentData.grade === "11ens") {
-      window.open("/plannerPages/ensani2.html", "_blank");
+      window.open(
+        `${process.env.PUBLIC_URL}/plannerPages/ensani2.html`,
+        "_blank"
+      );
     } else if (studentData.grade === "10ens") {
-      window.open("/plannerPages/ensani1.html", "_blank");
+      window.open(
+        `${process.env.PUBLIC_URL}/plannerPages/ensani1.html`,
+        "_blank"
+      );
     } else if (studentData.grade === "12riazi") {
-      window.open("/plannerPages/riazi3.html", "_blank");
+      window.open(
+        `${process.env.PUBLIC_URL}/plannerPages/riazi3.html`,
+        "_blank"
+      );
     } else if (studentData.grade === "11riazi") {
-      window.open("/plannerPages/riazi2.html", "_blank");
+      window.open(
+        `${process.env.PUBLIC_URL}/plannerPages/riazi2.html`,
+        "_blank"
+      );
     } else if (studentData.grade === "10riazi") {
-      window.open("/plannerPages/riazi1.html", "_blank");
+      window.open(
+        `${process.env.PUBLIC_URL}/plannerPages/riazi1.html`,
+        "_blank"
+      );
     } else if (studentData.grade === "nohom") {
-      window.open("/plannerPages/nohom.html", "_blank");
+      window.open(
+        `${process.env.PUBLIC_URL}/plannerPages/nohom.html`,
+        "_blank"
+      );
     }
   }
+
   return (
     <>
       <nav
