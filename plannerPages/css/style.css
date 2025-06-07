@@ -1,0 +1,258 @@
+@font-face {
+    font-family: morabba-medium;
+    src: url('../fonts/Morabba/woff2/Morabba-Medium.woff2');
+}
+
+*{
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-family: morabba-medium;
+}
+
+div.form-container {
+    padding: 20px;
+    background-color: #d6d3d1;
+    width: 600px;
+    height: min-content;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px 0px #eaeaea;
+}
+
+div.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+div.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input::placeholder {
+    font-size: 12px;
+}
+
+input , select {
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: morabba-medium;
+}
+
+select {
+    height: 43px;
+    cursor: pointer;
+}
+
+.required {
+    margin-top: -15px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 10px;
+    word-spacing: 1px;
+    color: #820000;
+}
+
+.alert {
+    text-align: justify;
+    font-size: 12px;
+    word-spacing: 1px;
+    margin: 0px 0px 20px 0px;
+}
+
+/* warning box */
+.warning-box {
+    margin: 0px 0px 20px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #820000;
+    color: #fff;
+}
+
+.warning-box span {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.warning-msg {
+    text-align: justify;
+    font-size: 12px;
+    word-spacing: 1.5px;
+    margin: 0 0 5px 0;
+    color: #fff;
+}
+/* warning box */
+
+.biology {
+    border: 1.5px solid #24814e;
+}
+
+.chemistry {
+    border: 1.5px solid #750E21;
+}
+
+.physic {
+    border: 1.5px solid #13005A;
+}
+
+.math {
+    border: 1.5px solid #ffea2e;
+}
+
+.geology {
+    border: 1.5px solid #7A1CAC;
+}
+
+.form-btn {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 16px;
+    background-color: #24814e;
+    color: white;
+    font-family: morabba-medium;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 5px 0px #929292;
+}
+
+.form-btn:hover {
+    background-color: #0a4b27;
+}
+
+.clear-btn {
+    background-color: #820000;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 5px 0px #929292;
+}
+
+.clear-btn:hover {
+    background-color: #480000;
+}
+
+div.table {
+    margin-top: 30px;
+    background-color: #fafafa;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 0px #929292;
+    font-size: 14px;
+}
+
+div.day-container {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+}
+
+div.day-container:not(:last-child) {
+    border-bottom: 1px solid #282828;
+}
+
+div.table-day {
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 600;
+}
+
+div.day-plan {
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.adabiat {
+    border: 1.5px solid #7695FF;
+}
+
+.jame-shenasi {
+    border: 1.5px solid #FF9100;
+}
+
+.arabi {
+    border: 1.5px solid #982B1C;
+}
+
+.tarikh {
+    border: 1.5px solid #2E236C;
+}
+
+input.joghrafi {
+    border: 1.5px solid #B5C18E;
+}
+
+.mantegh {
+    border: 1.5px solid #D95F59;
+}
+
+.eghtesad {
+    border: 1.5px solid #FF76CE;
+}
+
+.ravan-shenasi {
+    border: 1.5px solid #9d0066;
+}
+
+.geometry {
+    border: 1.5px solid #C7253E;
+}
+
+.hesaban {
+    border: 1.5px solid #ff6c11;
+}
+
+.amar {
+    border: 1.5px solid hsl(214, 100%, 69%);
+}
+
+.gosaste {
+    border: 1.5px solid hsl(235, 100%, 67%);
+}
+
+.oloom {
+    border: 1.5px solid #13005A;
+}
+
+.farsi {
+    border: 1.5px solid #7695FF;
+}
+
+.payam {
+    border: 1.5px solid #bf76ff;
+}
+
+.motaleat {
+    border: 1.5px solid #bd9b15;
+}
+
+.zaban {
+    border: 1.5px solid #b0b7ff;
+}
