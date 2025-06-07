@@ -28,13 +28,13 @@ export default function Slider() {
           }}
         >
           <SwiperSlide>
-            <img src="./Img/169.png" alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="./Img/169.png" alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="./Img/169.png" alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="img" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -58,13 +58,13 @@ export default function Slider() {
           }}
         >
           <SwiperSlide>
-            <img src="./Img/169.png" alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="./Img/169.png" alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="./Img/169.png" alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="img" />
           </SwiperSlide>
         </Swiper>
       </div>

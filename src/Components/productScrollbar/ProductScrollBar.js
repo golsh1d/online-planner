@@ -16,13 +16,13 @@ export default function ProductScrollBar() {
         className="myScrollBar"
       >
         <SwiperSlide>
-          <img src="./Img/169.png" alt="firstPic" />
+          <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="firstPic" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./Img/169.png" alt="secondPic" />
+          <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="secondPic" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./Img/169.png" alt="thirdPic" />
+          <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="thirdPic" />
         </SwiperSlide>
       </Swiper>
     </>

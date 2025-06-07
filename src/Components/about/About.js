@@ -92,7 +92,7 @@ export default function About() {
               firstAboutSectionIsVisible && "slide-right"
             }`}
           >
-            <img src="./Img/finalOpenBook.png" alt="" />
+            <img src={`${process.env.PUBLIC_URL}/Img/finalOpenBook.png`} alt="" />
           </div>
         </div>
         <div
@@ -104,7 +104,7 @@ export default function About() {
               secondAboutSectionIsVisible && "slide-left"
             }`}
           >
-            <img src="./Img/finalHandWriting2.png" alt="" />
+            <img src={`${process.env.PUBLIC_URL}/Img/finalHandWriting2.png`} alt="" />
           </div>
           <div className="About-section-text About-section-text-max-768 About-section-text-min-768">
             <div className="About-section-text-title About-section-text-title-max-768 About-section-text-title-min-768">
@@ -121,7 +121,7 @@ export default function About() {
           </div>
         </div>
         <div className="About-img-between-section-container About-img-between-section-container-max-768 About-img-between-section-container-min-768">
-          <img src="./Img/lamp.png" alt="lamp" />
+          <img src={`${process.env.PUBLIC_URL}/Img/lamp.png`} alt="lamp" />
         </div>
         <div
           ref={thirdAboutSection}
@@ -144,7 +144,7 @@ export default function About() {
               thirdAboutSectionIsVisible && "slide-right"
             }`}
           >
-            <img src="./Img/finalOnlineStuding.png" alt="" />
+            <img src={`${process.env.PUBLIC_URL}/Img/finalOnlineStuding.png`} alt="" />
           </div>
         </div>
         <div
@@ -156,7 +156,7 @@ export default function About() {
               forthAboutSectionIsVisible && "slide-left"
             }`}
           >
-            <img src="./Img/finalteacher2.png" alt="" />
+            <img src={`${process.env.PUBLIC_URL}/Img/finalteacher2.png`} alt="" />
           </div>
           <div className="About-section-text About-section-text-max-768 About-section-text-min-768">
             <div className="About-section-text-title About-section-text-title-max-768 About-section-text-title-min-768">

@@ -8,7 +8,7 @@ export default function HeroHeader() {
     <section className="HeroHeader-container HeroHeader-container-max-768 HeroHeader-container-min-768">
       <img
         className="HeroHeader-img-min-1920 HeroHeader-img-min-1280 HeroHeader-img-min-1024 HeroHeader-img-min-768 HeroHeader-img-max-768"
-        src="./Img/heroHeader.jpg"
+        src={`${process.env.PUBLIC_URL}/Img/heroHeader.jpg`}
         alt="heroHeader"
       />
       <div className="HeroHeader-chevron-down-container">

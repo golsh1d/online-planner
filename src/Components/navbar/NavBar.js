@@ -77,7 +77,7 @@ export default function NavBar() {
       >
         <div className="NavBar-right">
           <div className="NavBar-img-container NavBar-img-container-min-768 NavBar-img-container-min-1024 NavBar-img-container-min-1280 NavBar-img-container-min-1920">
-            <img src="./Img/logo.jpg" alt="logo" />
+            <img src={`${process.env.PUBLIC_URL}/Img/logo.jpg`} alt="logo" />
           </div>
           <ul className="NavBar-menu">
             <li className="NavBar-list-item-min-1920 NavBar-list-item-min-1280 NavBar-list-item-min-1024 NavBar-list-item-min-768">
@@ -146,13 +146,13 @@ export default function NavBar() {
         dir="rtl"
       >
         <div className="NavBar-sm-img-container">
-          <img src="./Img/logo.jpg" alt="logo" />
+          <img src={`${process.env.PUBLIC_URL}/Img/logo.jpg`} alt="logo" />
         </div>
         <MenuIcon className="NavBar-sm-menu-icon" onClick={showSideNav} />
         <div ref={sideNav} className="NavBar-side-container">
           <div className="NavBar-side-logo-container">
             <div className="NavBar-side-img-container">
-              <img src="./Img/logo.jpg" alt="logo" />
+              <img src={`${process.env.PUBLIC_URL}/Img/logo.jpg`} alt="logo" />
             </div>
           </div>
           <ul className="NavBar-side-menu-container">

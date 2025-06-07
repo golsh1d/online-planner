@@ -5,8 +5,12 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const basename =
+  process.env.NODE_ENV === "production" ? "/online-planner" : "/";
+
 root.render(
-  <BrowserRouter basename="/online-planner">
+  <BrowserRouter basename={basename}>
     <App />
   </BrowserRouter>
 );
