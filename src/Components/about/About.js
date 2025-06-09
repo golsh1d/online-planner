@@ -156,7 +156,7 @@ export default function About() {
               forthAboutSectionIsVisible && "slide-left"
             }`}
           >
-            <img src={`${process.env.PUBLIC_URL}/Img/finalteacher2.png`} alt="" />
+            <img src={`${process.env.PUBLIC_URL}/Img/finalTeacher2.png`} alt="" />
           </div>
           <div className="About-section-text About-section-text-max-768 About-section-text-min-768">
             <div className="About-section-text-title About-section-text-title-max-768 About-section-text-title-min-768">
