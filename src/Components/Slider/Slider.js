@@ -28,13 +28,13 @@ export default function Slider() {
           }}
         >
           <SwiperSlide>
-            <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/Img/planner1.jpg`} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/Img/planner2.jpg`} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/Img/planner3.jpg`} alt="img" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -58,13 +58,13 @@ export default function Slider() {
           }}
         >
           <SwiperSlide>
-            <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/Img/planner1.jpg`} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/Img/planner2.jpg`} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={`${process.env.PUBLIC_URL}/Img/169.png`} alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/Img/planner3.jpg`} alt="img" />
           </SwiperSlide>
         </Swiper>
       </div>
