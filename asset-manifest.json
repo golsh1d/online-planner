@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/online-planner/static/css/main.0b0e1b3b.css",
-    "main.js": "/online-planner/static/js/main.64b8ef37.js",
+    "main.js": "/online-planner/static/js/main.a10f9868.js",
     "static/media/DanaFaNum-DemiBold.woff2": "/online-planner/static/media/DanaFaNum-DemiBold.606ee4ede1f9de62b0bc.woff2",
     "static/media/DanaFaNum-Regular.woff2": "/online-planner/static/media/DanaFaNum-Regular.cd89c4bbb5d68d78d5fd.woff2",
     "static/media/DanaFaNum-Medium.woff2": "/online-planner/static/media/DanaFaNum-Medium.3c7fcbd8ab0682219f68.woff2",
@@ -10,10 +10,10 @@
     "static/media/Morabba-Light.woff2": "/online-planner/static/media/Morabba-Light.c98a9f827e3473976008.woff2",
     "index.html": "/online-planner/index.html",
     "main.0b0e1b3b.css.map": "/online-planner/static/css/main.0b0e1b3b.css.map",
-    "main.64b8ef37.js.map": "/online-planner/static/js/main.64b8ef37.js.map"
+    "main.a10f9868.js.map": "/online-planner/static/js/main.a10f9868.js.map"
   },
   "entrypoints": [
     "static/css/main.0b0e1b3b.css",
-    "static/js/main.64b8ef37.js"
+    "static/js/main.a10f9868.js"
   ]
 }
